@@ -4,20 +4,20 @@ This is a simple article application using Laravel-admin. where there are severa
 
 ## Installation
 
-First,you have to run the following command on cmd :
+First, you have to run the following command on cmd :
 
 ```bash
 composer install
 ```
-Then run these commands to publish assets and config：
+Then run this command to publish assets and config：
 
 ```bash
 php artisan vendor:publish --provider="Encore\Admin\AdminServiceProvider"
 ```
-After run command you can find config file in config/admin.php, in this file you can change the install directory,db connection or table names.
+After run command you can find config file in config/admin.php, in this file you can change the installation directory,db connection or table names.
 \
 \
-Now open .env file, end changed like this:
+Duplicate file .env.example to new file named .env and adjust the configuration values like below:
 
 ```python
 # set database
@@ -28,6 +28,10 @@ DB_DATABASE=article
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+After the .env file created, run the following command to generate the app key:
+```bash
+php artisan key:generate
+```
 Run the migrate Artisan command:
 ```bash
 php artisan migrate
@@ -36,13 +40,13 @@ Then run db:seed Artisan command to seed your database:
 ```bash
 php artisan db:seed
 ```
-At last you may run server using the Artisan CLi's serve command:
+Last you may run this server using the Artisan CLi's serve command:
 
 ```bash
 php artisan serve
 ```
 
-Finally open http://localhost/admin/ in browser,use username admin and password admin to login.
+Finally open http://localhost:8000/admin/ in your browser, use username admin and password admin to login.
 
 ## Environment
 - PHP version => PHP/7.4.12
