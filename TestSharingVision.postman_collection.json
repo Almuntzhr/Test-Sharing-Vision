@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "2c9608dc-b3c1-4151-8364-acbd6b44dd8a",
+		"name": "TestSharingVision",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "803754"
+	},
+	"item": [
+		{
+			"name": "List Article",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/posts/<offset>/<limit>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"<offset>",
+						"<limit>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Five, 'and I'll tell test\",\r\n    \"content\": \"Ea doloremque doloremque sed quia. Optio omnis quia ratione sed. Aut numquam adipisci asperiores commodi commodi. Quia ipsam quam aut veniam. Delectus nisi non ut. Aspernatur incidunt deleniti nisi in voluptatem repudiandae. Vitae natus quia repellat maiores nihil eum amet. Et molestiae aut similique aut.\",\r\n    \"category\": \"test-category\",\r\n    \"status\": \"publish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Five, 'and I'll tell test updated\",\r\n    \"content\": \"Ea doloremque doloremque sed quia. Optio omnis quia ratione sed. Aut numquam adipisci asperiores commodi commodi. Quia ipsam quam aut veniam. Delectus nisi non ut. Aspernatur incidunt deleniti nisi in voluptatem repudiandae. Vitae natus quia repellat maiores nihil eum amet. Et molestiae aut similique aut.\",\r\n    \"category\": \"test-category\",\r\n    \"status\": \"draft\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/posts/<id>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"<id>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/posts/<id>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"<id>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/posts/<id>",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"<id>"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
