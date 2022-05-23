@@ -1,0 +1,21 @@
+akun web 
+
+name:ArticleSharingVisionTest
+pass:sharingvisiontest112233
+=============================
+
+databse server
+
+name:article
+username:laravel
+pass:qSqkP>4%Lsr3^Tib
+=============================
+
+hosting
+
+host:files.000webhost.com
+username:ArticleSharingVisionTest
+password:sharingvisiontest112233
+port:21
+
+
