@@ -6,8 +6,8 @@ pass:sharingvisiontest112233
 
 databse server
 
-name:article
-username:laravel
+name:id18977637_article
+username:id18977637_laravel
 pass:qSqkP>4%Lsr3^Tib
 =============================
 
